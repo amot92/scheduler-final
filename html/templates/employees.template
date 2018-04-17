@@ -1,0 +1,53 @@
+<div class="container-fluid" id="employees">
+    <div class="jumbotron jumbotron-fluid text-center mb-0">
+        <h1>Employees</h1>
+    </div>
+    <div class="">
+
+    </div>
+    <div class="container-fluid px-0">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Position 
+                    <span class="btn float-right py-0 my-0" data-toggle="modal" data-target="#addEmployeeModal">&#65291;</span>
+                </th>
+            </tr>
+          </thead>
+          <tbody>
+              <!-- This is hard coded, we need to use PHP to generate this in a loop -->
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Cashier 
+                <span class="btn-sm btn-danger float-right">&times;</span>
+                <span class="btn-sm btn-success float-right">&#9998;</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>Cashier 
+                <span class="btn-sm btn-danger float-right">&times;</span>
+                <span class="btn-sm btn-success float-right">&#9998;</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>Stocker 
+                <span class="btn-sm btn-danger float-right">&times;</span>
+                <span class="btn-sm btn-success float-right">&#9998;</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,52 @@
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="addShiftModal" aria-hidden="true" id="addShiftModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header-lg mt-2 mb-4 mx-2">
+                <div class="modal-title p-4 bg-light">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h1 class="text-center">Add Shift</h1>
+                </div>
+            </div>    
+            <div class="modal-body-lg">
+                <div class="container-fluid">
+                    <form action="createShift.php" method="post">
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="posName">Position</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="staffPosition" name="staffPosition" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="maxBid">Max Bids</label>
+                            <div class="col-lg-10">
+                                <input type="number" class="form-control" id="maxBid" name="maxBid" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="startTime">Start Time</label>
+                            <div class="col-lg-10">
+                                <input type="datetime-local" class="form-control" id="startTime" name="startTime" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="endTime">End Time</label>
+                            <div class="col-lg-10">
+                                <input type="datetime-local" class="form-control" id="endTime" name="endTime" required>
+                            </div>
+                        </div>
+                        <div class="form-check text-right">
+                            <input type="checkbox" class="form-check-input" checked data-toggle="toggle" id="active" name="active" value=1>
+                            <label class="form-check-label" for="active">Active</label>
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn btn-danger" id="clear">Clear</button>
+                            <input type="submit" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

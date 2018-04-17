@@ -1,0 +1,16 @@
+<div class="container-fluid" id="schedule" role="tabpanel" aria-labelledby="schedule-tab">
+    <div class="jumbotron jumbotron-fluid text-center mb-0">
+        <h1>Schedule</h1>
+    </div>
+        <form action="#" method="get">
+            <div class="p-2 col-lg-4 mx-auto row">
+                <div class="col-lg-10 my-3">
+                    <input type="week" class="form-control" id="weekSelector">
+                </div>
+                <span class="btn-lg btn-success float-right py-1 my-3" data-toggle="modal" data-target="#addShiftModal">&#65291;</span>
+            </div>
+        </form>
+    <div class="container-fluid px-0" id="shiftContainer">
+        
+    </div>
+</div>
